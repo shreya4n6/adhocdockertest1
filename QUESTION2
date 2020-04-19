@@ -1,0 +1,19 @@
+Question 2
+Run the Command to create the Dockerfile
+
+docker build -t adhoc:shreya https://github.com/redashu/summer2020dockertest.git
+
+Use this command to tag the image
+
+docker tag adhoc:shreya shreya/adhoc:shreya
+
+Then use this to login to docker
+
+docker login
+
+Enter you username and password
+Run the command to push to docker hub
+
+docker push shreya/adhoc:shreya
+
+The image shreya/adhoc:shreya has be uploaded to Docker Hub
