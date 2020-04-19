@@ -1,0 +1,34 @@
+Question 4
+Cloning the website repo
+
+git clone https://github.com/redashu/beginner-html-site-styled
+
+Renaming the folder
+
+mv beginner-html-site-styled webapp
+
+Creating Dockerfile
+
+FROM centos
+MAINTAINER talukdarboni30@gmail.com
+RUN yum install httpd -y
+COPY webapp /var/www/html/
+EXPOSE 80
+ENTRYPOINT httpd -DFOREGROUND
+
+Running Container from the Image
+
+docker run -d --name shreyac4q4 -p 8081:80 shreya:q4
+
+Accessing the website
+
+Link to Website
+Tagging the image
+
+docker tag boni321:q4 boni321/boni321:q4
+
+Pushing to Docker HUB
+
+docker push boni321/boni321:q4
+
+Docker HUB Image Link
