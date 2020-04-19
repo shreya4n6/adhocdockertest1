@@ -1,0 +1,21 @@
+Question 1
+Create Dockerfile as follows
+
+FROM alpine
+MAINTAINER talukdarboni30@gmail.com
+ENTRYPOINT date +%T
+
+Build the image from Dockerfile as follows
+
+docker build -t alpine:shreya.
+
+Create containers
+Create 1st Container
+
+docker run --name shreyac1q1 alpine:shreya >> question1.txt
+
+Create 2nd Container
+
+docker run --name shreyac2q1 alpine:shreya >> question1.txt
+
+Now the 2 time values will be saved in your file named question1.txt
