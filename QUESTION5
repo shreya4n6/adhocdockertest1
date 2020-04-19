@@ -1,0 +1,14 @@
+Question 5
+Creating Docker Volume
+
+docker volume create boni321q5
+
+Creating Container
+
+docker run -it --name shreyac5q5 -v boni321q5:/adhocvol -v /etc/passwd:/user.txt alpine sh
+
+Then inside the container run
+
+wc -l user.txt > /adhocvol/usercount.txt
+
+Lines Count: 28
